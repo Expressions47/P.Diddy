@@ -603,3 +603,18 @@ print("""
 Бувайте!
 
 - SkibidiSigma Entertainment""")
+
+time.sleep(1)
+print(f"{Style.BRIGHT}ВІДГУК{Style.RESET_ALL}")
+while True:
+    chars = ["Іван", "Литвин", "Пі Дідді", "Афольд", "Коренеплід", "Таксист"]
+    a = input(f"""
+Який ваш улюблений персонаж трилогії?
+Список: {chars}""")
+    if a not in chars:
+        print("Це не персонаж даного проекту.")
+    else:
+        continue
+input("""
+Що варто покращити в проекті на вашу думку?""")
+print("Дякую за відгук!")
